@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>Nagy Tamás Norbert, E.ON Regisztrált villanyszerelő, Szombathely</title>
+    <title>Demó weboldal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,11 +13,17 @@
 <body>
     <!--KELL EGY RÓLAM MEG EGY VÉLEMÉNYEK-->
     <header>
+        <div class="demo-notice" id="demo">
+            <div class="container">
+                <p>Ez egy demó oldal, ilyen lehet a tiéd is!</p>
+                <a href="javascript:closeNotice()">Bezárás</a>
+            </div>
+        </div>
         <div class="topnav">
             <div class="container">
-                <a href="#"><i class="bi bi-geo-alt"></i><span>Szombathely, Nagy Ernő utca 7/b</span></a>
-                <a href="#"><i class="bi bi-telephone"></i><span>+36 30 999 9999</span></a>
-                <a href="#"><i class="bi bi-envelope"></i><span>hello@minta.hu</span></a>
+                <a href="#"><i class="bi bi-geo-alt"></i><span data-var="address"></span></a>
+                <a href="tel:+36 30 123 4567"><i class="bi bi-telephone"></i><span data-var="phone"></span></a>
+                <a href="mailto:info@minta.hu"><i class="bi bi-envelope"></i><span data-var="mail"></span></a>
             </div>
         </div>
 
@@ -26,7 +32,7 @@
                 <div class="logo">
                     <i class="bi bi-lightning-charge"></i>
                     <div>
-                        <div class="main"><nobr>Nagy Tamás Norbert</nobr></div>
+                        <div class="main"><nobr><span data-var="name"></span></nobr></div>
                         <div class="sub"><nobr>E.ON Regisztrált villanyszerelő</nobr></div>
                     </div>
                 </div>
@@ -37,20 +43,20 @@
                     <li><a href="#kapcsolat">Kapcsolat</a></li>
                 </ul>
 
-                <a href="#" class="btn btn-primary">Hívj most!</a>
+                <a href="tel:+36 30 123 4567" class="btn btn-primary">Hívj most!</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <a href="tel:06309999999" class="gotel" id="btTop"><i class='bi bi-telephone'></i></a>
+        <a href="tel:+36 30 123 4567" class="gotel" id="btTop"><i class='bi bi-telephone'></i></a>
         <section class="hero bg-offwhite">
             <div class="container">
-                <h1>Villanyszerelés <span>Szombathelyen</span> és Vas megyében</h1>
+                <h1><span data-var="market"></span> <span class="hl" data-var="city"></span> és <span data-var="state"></span> megye területén</h1>
                 <span class="badge-hero"><i class="bi bi-gem"></i>Ingyenes helyszíni felméréssel</span>
                 <p>Professzionális villamossági szolgáltatások, amelyben megbízhat. Gyors kiszállással, több, mint 30 év szakmai tapasztalatával, magánszemélyeknek és üzleti partnereknek egyaránt.</p>
                 <div>
-                    <a href="tel:06309999999" class="btn btn-primary">Hívj most!</a>
+                    <a href="tel:+36 30 123 4567" class="btn btn-primary">Hívj most!</a>
                     <a href="#szolgaltatasaim" class="btn btn-secondary">Ezekben segíthetek</a>
                 </div>
             </div>
@@ -161,16 +167,16 @@
             <div class="container contact-area section-with-title-center-align">
                 <h2>Lépjünk kapcsolatba</h2>
                 <div class="contact-bx">
-                    <a href="#">
+                    <a href="tel:+36 30 123 4567">
                         <i class="bi bi-telephone"></i>
                         <h5>Hívj engem!</h5>
-                        <span>+36 30 999 9999</span>
+                        <span data-var="phone"></span>
                     </a>
 
-                    <a href="#">
+                    <a href="mailto:info@minta.hu">
                         <i class="bi bi-envelope"></i>
                         <h5>Küldj üzenetet!</h5>
-                        <span>hello@minta.hu</span>
+                        <span data-var="mail"></span>
                     </a>
                 </div>
             </div>
@@ -180,7 +186,7 @@
     <footer>
         <div class="container">
             <div class="col">
-                <h5 class="logo"><i class="bi bi-lightning-charge"></i>Nagy Tamás Norbert</h5>
+                <h5 class="logo"><i class="bi bi-lightning-charge"></i><span data-var="name"></span></h5>
                 <p>Professzionális villamossági szolgáltatások magenszemélyeknek és vállalkozásoknak, E.ON regisztrált villanyszerelőként. Engedéllyel, biztosítással, kiválóságra törekedve.</p>
             </div>
 
@@ -196,9 +202,9 @@
             <div class="col">
                 <h5>Kapcsolatfelvétel</h5>
                 <ul>
-                    <li><a href="#"><i class="bi bi-telephone"></i>+36 30 999 9999</a></li>
-                    <li><a href="#"><i class="bi bi-envelope"></i>hello@kontakt.hu</a></li>
-                    <li><a href="#"><i class="bi bi-geo-alt"></i>Szombathely, Nagy Ernő utca 7/b</a></li>
+                    <li><a href="tel:+36 30 123 4567"><i class="bi bi-telephone"></i><span data-var="phone"></span></a></li>
+                    <li><a href="mailto:info@minta.hu"><i class="bi bi-envelope"></i><span data-var="mail"></span></a></li>
+                    <li><a href="#"><i class="bi bi-geo-alt"></i><span data-var="address"></span></a></li>
                 </ul>
             </div>
         </div>
